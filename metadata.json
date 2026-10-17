@@ -1,0 +1,6 @@
+{
+  "name": "Lumio - Mobile Image & Graphic Studio",
+  "description": "Clean, powerful, and offline-first mobile image editor with independent layer objects, live effect previews, and PSD/JPG/PNG export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

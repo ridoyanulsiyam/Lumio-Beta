@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/*
+ * Tailwind v4 uses the OS setting (prefers-color-scheme) for `dark:` by default.
+ * Lumio has its own in-app theme toggle that adds/removes the `.dark` class on <html>,
+ * so the dark variant must be bound to that class.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  /* Editor-style app: no pull-to-refresh bounce, no double-tap zoom delay */
+  overscroll-behavior: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
